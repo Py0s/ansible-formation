@@ -26,14 +26,14 @@
         accept_hostkey: yes
         clone: yes
         dest: /home/{{user}}/www
-        repo: git@github.com:jloosfelt/supersite.git
+        repo: git@github.com:Py0s/simple-website.git
         update: yes
         key_file: "/home/{{user}}/deploy_key_for_supersite"
       tags: gitclone
-  roles:
-    - role: vhost
-      user: '{{ user }}'
-      base_dir: /home/{{user}}/www
-      url: ansible.dev
-      tags:
-      - vhost
+  # roles:
+  #   - role: vhost
+  #     user: '{{ user }}'
+  #     base_dir: /home/{{user}}/www
+  #     url: ansible.dev
+  #     tags:
+  #     - vhost
